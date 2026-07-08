@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Bhagavad Gita</title>
+
+    <link rel="preconnect"
+          href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600&family=Cormorant+Garamond:wght@400;500;600;700&display=swap"
+          rel="stylesheet">
+
+    <link rel="stylesheet"
+          href="/static/css/style.css">
+
+</head>
+
+<body>
+
+<div class="poster">
+
+    <img
+        src="/static/images/krishnaarjuna.jpg"
+        class="bg-image"
+        alt="Krishna teaching Arjuna">
+
+    <div class="overlay"></div>
+
+    <div class="gold-border"></div>
+
+    <!-- Quote Card -->
+
+    <div class="quote-card">
+
+        <div class="reference">
+
+            <div class="ref-title">
+                CH
+            </div>
+
+            <div class="ref-number">
+                {{ quote.chapter }}
+            </div>
+
+            <div class="ref-divider"></div>
+
+            <div class="ref-title">
+                VS
+            </div>
+
+            <div class="ref-number">
+                {{ quote.verse }}
+            </div>
+
+        </div>
+
+        <div class="quote-content">
+
+            <p class="quote-text">
+
+                <span class="open-quote">&ldquo;</span>
+
+                {{ quote.quote }}
+
+                <span class="close-quote">&rdquo;</span>
+
+            </p>
+
+            <div class="quote-author">
+                — Sri Krishna
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+</body>
+
+</html>
