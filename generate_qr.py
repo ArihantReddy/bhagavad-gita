@@ -1,6 +1,6 @@
 import qrcode
 
-url = "http://127.0.0.1:8000"
+url = "https://bhagavad-gita-c7xw.onrender.com"
 
 img = qrcode.make(url)
 
